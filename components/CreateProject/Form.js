@@ -133,8 +133,8 @@ function Form() {
       />
       <h2 className="mb-3 font-bold">Select Technology</h2>
       <div className="grid grid-cols-2 mb-4 md:grid-cols-3  ">
-        {Data.Technology.map((item) => (
-          <div className="flex gap-2 items-center">
+        {Data.Technology.map((item,index) => (
+          <div key={index} className="flex gap-2 items-center">
             <input id="technology"
             onClick={(e)=>onTechSelect(item.name,e.target.checked)}
              type="checkbox" 

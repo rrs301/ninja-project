@@ -6,9 +6,7 @@ import UserDetail from './UserDetail';
 
 function ProjectInfo() {
     const {project,setProject}=useContext(SelectedProjectContext)
-    useEffect(()=>{
-        console.log(project);
-    },[])
+  
     return (
     <div>
         <h2 className='font-medium text-[18px] mb-3'>{project.title}</h2>
