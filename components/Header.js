@@ -16,7 +16,7 @@ function Header() {
       className="flex justify-between
     border-b-[2px] border-blue-500 p-4"
     >
-      <img src="./Images/logo.png"
+      <Image src="/Images/logo.png" width={140} height={140}
        className="w-[140px] cursor-pointer" onClick={()=>router.push('/')} />
       <div className="flex gap-5">
         <button

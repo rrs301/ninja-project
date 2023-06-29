@@ -1,5 +1,6 @@
 import React, { useContext } from 'react'
 import { SelectedProjectContext } from '../Profile/ProjectList'
+import Image from 'next/image'
 
 function TechList() {
   const {project,setProject}=
@@ -17,22 +18,32 @@ function TechList() {
       <h2 className='font-bold mt-6'>Source/Links</h2>
          {project['app-demo-url']? 
          <h2 className='font-light mt-4 cursor-pointer flex items-center gap-2'>
-           <img src='./Images/play.png' onClick={()=>window.open(project['app-demo-url'])} className='w-[20px]'/> 
+           <Image src='./Images/play.png' 
+           width={20} height={20} alt='icon'
+            
+            onClick={()=>window.open(project['app-demo-url'])} 
+            className='w-[20px]'/> 
             {project['app-demo-url']}</h2>:null}
             {project['yt-url']? 
             <h2 className='font-light mt-4 cursor-pointer 
             flex items-center gap-2' onClick={()=>window.open(project['yt-url'])}>
-           <img src='./Images/youtube.png' className='w-[20px]'/>  {project['yt-url']}</h2>:null}
+           <Image src='./Images/youtube.png' 
+           width={20} height={20} alt='icon'
+            className='w-[20px]'/>  {project['yt-url']}</h2>:null}
             {project['ui-ux-design-url']?  <h2 className='font-light max-w-[75ch]
             flex items-center gap-2 mt-4 cursor-pointer' onClick={()=>window.open(project['ui-ux-design-url'])}>
-            <img src='./Images/figma.png' className='w-[20px]'/> {project['ui-ux-design-url']}</h2>:null}
+            <Image src='./Images/figma.png'width={20} height={20} alt='icon'
+             className='w-[20px]'/> {project['ui-ux-design-url']}</h2>:null}
             {project['github-url']?<h2 className='font-light
             flex items-center gap-2 mt-4 cursor-pointer' onClick={()=>window.open(project['github-url'])}>
-           <img src='./Images/github.png' className='w-[20px]'/> 
+           <Image src='./Images/github.png' width={20} height={20} alt='icon'
+            className='w-[20px]'/> 
             {project['github-url']}</h2>:null}
             {project['instagram']?<h2 className='font-light
             flex items-center gap-2 mt-4 cursor-pointer' onClick={()=>window.open(project['instagram'])}>
-           <img src='./Images/instagram.png' className='w-[20px]'/> 
+           <Image src='./Images/instagram.png' 
+           width={20} height={20} alt='icon'
+            className='w-[20px]'/> 
             {project['instagram']}</h2>:null}
 
             </div>
