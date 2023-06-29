@@ -20,7 +20,7 @@ function Header() {
       alt="logo"
        className="w-[140px] cursor-pointer" onClick={()=>router.push('/')} />
       <div className="flex gap-5">
-        <button
+     {session?   <button
           className="px-3 p-2
          bg-blue-500 text-white 
           rounded-full flex  gap-2 
@@ -31,7 +31,7 @@ function Header() {
           <span className="hidden sm:block text-[12px]">
             ADD PROJECT</span>
           {" "}
-        </button>
+        </button>:null}
 
         <button
           className="px-3 p-2

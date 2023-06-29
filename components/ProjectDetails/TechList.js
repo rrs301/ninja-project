@@ -18,7 +18,7 @@ function TechList() {
       <h2 className='font-bold mt-6'>Source/Links</h2>
          {project['app-demo-url']? 
          <h2 className='font-light mt-4 cursor-pointer flex items-center gap-2'>
-           <Image src='./Images/play.png' 
+           <Image src='/Images/play.png' 
            width={20} height={20} alt='icon'
             
             onClick={()=>window.open(project['app-demo-url'])} 
@@ -27,21 +27,21 @@ function TechList() {
             {project['yt-url']? 
             <h2 className='font-light mt-4 cursor-pointer 
             flex items-center gap-2' onClick={()=>window.open(project['yt-url'])}>
-           <Image src='./Images/youtube.png' 
+           <Image src='/Images/youtube.png' 
            width={20} height={20} alt='icon'
             className='w-[20px]'/>  {project['yt-url']}</h2>:null}
             {project['ui-ux-design-url']?  <h2 className='font-light max-w-[75ch]
             flex items-center gap-2 mt-4 cursor-pointer' onClick={()=>window.open(project['ui-ux-design-url'])}>
-            <Image src='./Images/figma.png'width={20} height={20} alt='icon'
+            <Image src='/Images/figma.png'width={20} height={20} alt='icon'
              className='w-[20px]'/> {project['ui-ux-design-url']}</h2>:null}
             {project['github-url']?<h2 className='font-light
             flex items-center gap-2 mt-4 cursor-pointer' onClick={()=>window.open(project['github-url'])}>
-           <Image src='./Images/github.png' width={20} height={20} alt='icon'
+           <Image src='/Images/github.png' width={20} height={20} alt='icon'
             className='w-[20px]'/> 
             {project['github-url']}</h2>:null}
             {project['instagram']?<h2 className='font-light
             flex items-center gap-2 mt-4 cursor-pointer' onClick={()=>window.open(project['instagram'])}>
-           <Image src='./Images/instagram.png' 
+           <Image src='/Images/instagram.png' 
            width={20} height={20} alt='icon'
             className='w-[20px]'/> 
             {project['instagram']}</h2>:null}
